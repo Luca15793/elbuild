@@ -1,0 +1,34 @@
+.background-top{
+  background-image: url('../assets/images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 606.56px;
+}
+
+.blank-rect{
+  margin-left: 152px;
+  background-color: var(--white);
+  max-width: 570px;
+  min-height: 252.55px;
+  padding-left: 32px;
+  padding-top: 50px;
+}
+
+.blank-rect-mobile{
+  min-height: 409px;
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-top: 134px;
+  margin-bottom: 64px;
+  background-color: var(--white);
+  padding-top: 80px;
+  padding-left: 20.14px;
+  // padding-right: 20.14px;
+}
+
+
+@media (max-width: 767px) { 
+  .background-top{
+    display: flex;
+  }
+}

@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/scss/bootstrap';
+
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+:root{
+  --black: #3D3D3D;
+  --orange: #F2594B;
+  --orange2: #F25757;
+  --black2: #0D0C0C;
+  --grey: #F2F2F2;
+  --grey2: #5B5B5B;
+  --brown: #8C3B3B;
+  --white: #FFFFFF;
+  --padd-horiz: 15%;
+  --padd-horiz-footer: 10%;
+  --padd-horiz-mobile: 6%;
+}
+
+.desktop{
+  @extend .d-none; 
+  @extend .d-md-block;
+}
+
+.mobile{
+  @extend .d-md-none;
+}
