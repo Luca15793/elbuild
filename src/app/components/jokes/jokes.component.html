@@ -1,0 +1,22 @@
+<div class="mt-5 mb-2 pd-LR">
+  
+  <div class="col-lg-8 col-md-8 col-sm-12 mx-auto">
+    <table class="table table-dark table-striped">
+      <thead>
+        <tr>
+          <th scope="col" style="border-top-left-radius: 10px;">#</th>
+          <th scope="col" style="border-top-right-radius: 10px;">Joke Description</th>
+        </tr>
+    </thead>
+
+    <tbody *ngFor="let joke of jokesArray; let i = index">
+      <tr>
+        <th scope="row">{{i+1}}</th>
+        <td>{{joke.value}}</td>
+      </tr>
+    </tbody>
+
+    </table>
+  </div>
+
+</div>

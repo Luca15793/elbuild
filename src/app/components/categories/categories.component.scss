@@ -1,0 +1,13 @@
+.categories-box{
+  margin-top: 2rem;
+}
+
+.rnd-btn-align{
+  text-align: right;
+}
+
+@media (max-width: 767px) { 
+  .rnd-btn-align{
+    text-align: center;
+  }
+}

@@ -1,0 +1,35 @@
+<div class="col-lg-8 col-md-8 col-sm-12 mx-auto">
+
+<div class="rnd-btn-align mt-4">
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="getRandomJoke()">
+  Random Joke
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Random Joke Description</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div *ngIf="randomJoke" class="modal-body" style="text-align: justify;">
+        {{randomJoke.value}}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row">
+    <div class="categories-box text-center">
+      <button *ngFor="let cat of categories" type="button" class="btn btn-primary mx-2 my-2" (click)="clickOnButtonCategory(cat)">{{cat}}</button>
+    </div>
+
+</div>
+
+</div>
